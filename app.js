@@ -12,7 +12,7 @@ var indexRouter = require("./routes/index");
 
 async function getApp() {
 
-  // Database
+  // Database  
   var connectionInfo = await configData.getConnectionInfo();
   mongoose.connect(connectionInfo.DATABASE_URL);
 
